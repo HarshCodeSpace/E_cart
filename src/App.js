@@ -1,4 +1,4 @@
-import {Routes,Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Login from "./component/Login";
 import Signup from "./component/Signup"
 import Header from "./component/Header";
@@ -12,19 +12,19 @@ import { CartProvider } from "react-use-cart"
 function App() {
   return (
     <div>
-  <CartProvider>
-<Header/>
+      <CartProvider>
+        <Header />
 
-<Routes>
-        <Route path="" element={<Home/>}/>
-        <Route path="login" element={<Login/>}/>
-        <Route path="viewprofile" element={<Viewprofile/>}/>
-        <Route path="signup" element={<Signup/>}/>
-        <Route path="recommended" element={<Recommended/>}/>
-        <Route path="favourite" element={<Favourite/>}/>
-        
-      
-      </Routes>
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="viewprofile" element={<Viewprofile />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="recommended" element={<Recommended />} />
+          <Route path="favourite" element={<Favourite />} />
+
+
+        </Routes>
       </CartProvider>
     </div>
   );
