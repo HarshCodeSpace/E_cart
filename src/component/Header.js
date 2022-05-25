@@ -33,7 +33,7 @@ function Header() {
 
             {!isuserlogin &&
               <LinkContainer to="/signup">
-                <Nav.Link className="px-4 fs-5">Signup</Nav.Link>
+                <Nav.Link className="px-4 fs-5">SignUp</Nav.Link>
               </LinkContainer>
             }
 
