@@ -1,16 +1,16 @@
-const mongoose=require("mongoose")
+const mongoose = require("mongoose")
 
 
 
 //create task schema
 
-let commentschema=new mongoose.Schema({
+let commentschema = new mongoose.Schema({
 
-    title:{type:String,required:[true,"Title Required"]},
+    title: { type: String, required: [true, "Title Required"] },
 
-    comment:[{
+    comment: [{
 
-        descriptions:{type:String,required:true},
+        descriptions: { type: String, required: true },
 
     }]
 
@@ -20,10 +20,10 @@ let commentschema=new mongoose.Schema({
 
 //create model for schema
 
-const commentmodel=mongoose.model("comment",commentschema)
+const commentmodel = mongoose.model("comment", commentschema)
 
 
 
 //export
 
-module.exports=commentmodel
+module.exports = commentmodel
