@@ -21,7 +21,7 @@ function Header() {
     <Navbar collapseOnSelect expand="lg" className="headers" >
       <Container>
         <Navbar.Brand className="text-light logo fs-2"><b>
-          Lakshmi's Book Zone</b></Navbar.Brand>
+          Lakshmi's Book House</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -59,7 +59,7 @@ function Header() {
                 </LinkContainer>
                 <NavDropdown.Divider />
                 <LinkContainer to="/login">
-                  <NavDropdown.Item onClick={() => dispatch(userlogout())}>logout</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => dispatch(userlogout())}>Logout</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
               :
